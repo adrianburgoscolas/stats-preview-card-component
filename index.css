@@ -54,11 +54,11 @@ section p{
     align-items: center;
     margin-top: 20px;
 }
-#stats h4{
+#stats h2{
     font-size: 25px;
 }
 #stats p{
-    margin-top: -30px;
+    margin-top: -15px;
     font-size: 13px;
 }
 .accent{
@@ -129,9 +129,9 @@ img{
         flex-direction: column;
         justify-content: flex-start;
     }
-    #stats h4 {
+    #stats h2 {
         padding: 0;
-        margin: 30px;
+        margin: 20px;
     }
 
 }
