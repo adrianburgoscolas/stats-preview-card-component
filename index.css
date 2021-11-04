@@ -22,7 +22,8 @@ body{
     border-radius: 8px;
     overflow: hidden;
 }
- #content{
+
+ #content-box{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -89,4 +90,48 @@ img{
   .attribution a { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
+}
+
+@media screen and (max-width:1135px){
+    #card{
+        flex-direction: column-reverse; 
+        justify-content: flex-end; 
+        align-items: center;
+        height: 780px;
+        width: 320px;
+        text-align: center;
+    }
+    .attribution{
+        margin-top: 850px;
+    }
+    #content-box{
+        align-items: center;
+        padding: 0;
+        margin-top: 35px;
+
+        width: 290px;
+    }
+    #content-text{
+        width: 270px;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+    }
+    #img-box,img{
+        width: 320px;
+        height: 240px;
+        object-fit: cover;
+    }
+    h1{
+        font-size: 28px;
+    }
+    #stats{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #stats h4 {
+        padding: 0;
+        margin: 30px;
+    }
+
 }
