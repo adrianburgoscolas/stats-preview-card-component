@@ -13,7 +13,7 @@ body{
     font-family: 'Inter', sans-serif;
     background-color: hsl(233, 47%, 7%);
   }
-#card{
+.card{
     background-color: hsl(244, 38%, 16%);
     height: 445px;
     width: 1110px;
@@ -23,7 +23,7 @@ body{
     overflow: hidden;
 }
 
- #content-box{
+ .content-box{
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -34,40 +34,38 @@ h1,section{
     color: white;
 }
 h1{
-    font-size: 37px;
+    font-size: 36px;
     font-stretch: ultra-condensed ;
     margin-top: 1px;
 }
 p{
     color: hsla(0, 0%, 100%, 0.75);
 }
-#content-text{
+.content-text{
     width: 350px;
+    line-height: 25px;
+    margin-top: -5px;
+    
 }
 section p{
     color: hsla(0, 0%, 100%, 0.6);
 }
-#stats{
+.stats{
     width: 350px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: -40px;
 }
-#stats h2{
-    font-size: 25px;
-}
-#stats p{
-    margin-top: -15px;
-    font-size: 13px;
-}
+
 .accent{
     color: hsl(277, 64%, 61%);
 }
-#img-box{
+.img-box{
     position: relative;
 }
-#img-tint{
+.img-tint{
     margin: 0;
     padding: 0;
     position: absolute;
@@ -91,9 +89,23 @@ img{
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
 }
+li{
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+li div{
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+li p{
+    margin-top: 5px;
+}
 
 @media screen and (max-width:1135px){
-    #card{
+    .card{
         flex-direction: column-reverse; 
         justify-content: flex-end; 
         align-items: center;
@@ -104,20 +116,20 @@ img{
     .attribution{
         margin-top: 850px;
     }
-    #content-box{
+    .content-box{
         align-items: center;
         padding: 0;
-        margin-top: 35px;
+        margin-top: 36px;
 
         width: 290px;
     }
-    #content-text{
+    .content-text{
         width: 270px;
         font-size: 15px;
         padding: 0;
-        margin: 0;
+        margin: -12px;
     }
-    #img-box,img{
+    .img-box,img{
         width: 320px;
         height: 240px;
         object-fit: cover;
@@ -125,13 +137,15 @@ img{
     h1{
         font-size: 28px;
     }
-    #stats{
+    .stats{
         flex-direction: column;
         justify-content: flex-start;
+        padding-top: 30px;
+        margin-right: 35px;
     }
-    #stats h2 {
-        padding: 0;
-        margin: 20px;
+    li{
+        margin-bottom: 20px;
     }
+
 
 }
